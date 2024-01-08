@@ -16,7 +16,17 @@ window.onload = function(){
         }
     }
     // top 버튼 스크롤 기능
-    
-
+    const  topBtn = document.getElementById("top-btn")
+    topBtn.addEventListener("click" , function(even){
+        even.preventDefault();
+        // console.log(window.scrollY)
+        if(window.scrollY == 0){
+            window.scrollTo({
+                top:99999,
+                behavior:"smooth",
+            })
+        }
+        else{}
+    })
 
 }

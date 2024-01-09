@@ -194,9 +194,9 @@ body {
 .visual-slogan {
   position: relative;
   display: block;
-  font-size: 75px;
+  font-size: 70px;
   color: #fff;
-  font-weight: 550;
+  font-weight: 500;
   margin-top: 245px;
 }
 .visual-slogan::before {
@@ -208,16 +208,9 @@ body {
   height: 5px;
   background-color: rgb(237, 28, 36);
 }
-.visual-txt {
-  position: relative;
-  display: block;
-  margin-top: 70px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-}
 .visual-bt {
   display: block;
+
   position: absolute;
   /* left: calc(50% - 33px / 2); */
   left: 50%;
@@ -256,6 +249,7 @@ body {
   text-align: center;
   color: #111;
   padding-bottom: 31px;
+  background-color: aqua;
 }
 .business-title::after {
   content: "";
@@ -272,7 +266,6 @@ body {
 .business-desc {
   text-align: center;
   margin-top: 30px;
-  line-height: 25px;
 }
 /* 비지스 하단이미지 */
 .business-bottom {
@@ -558,7 +551,6 @@ body {
   font-size: 22px;
   color: #111;
   font-weight: 500;
-  padding: 100px;
 }
 .about-list li a::before {
   content: "";
@@ -575,40 +567,48 @@ body {
 .about-list li:nth-child(2) a::before {
   background-position: -110px 0;
 }
+.about-list li:nth-child(2) {
+  /* margin: 0 200px; */
+  width: 560px;
+}
 .about-list li:nth-child(3) a::before {
-  background-position: -235px 0;
+  background-position: 0 0;
 }
 /* 하단 */
 .footer {
   position: relative;
   display: block;
-  background-color: #444;
+  padding: 50px 0;
+  background-color: #4e4e4e;
 }
 .footer-inner {
   position: relative;
   display: block;
-  width: 100%;
-  height: 200px;
-  /* padding: 50px; */
 }
 .footer-logo {
   position: relative;
   display: block;
   float: left;
-  margin: 60px;
+  margin-right: 130px;
 }
 .footer-info {
   position: relative;
   display: block;
   float: left;
-  color: #c3c3c3;
-  line-height: 25px;
+}
+.footer-list {
+  position: relative;
+  display: block;
+}
+.footer-list li {
+  position: relative;
+  display: block;
   font-size: 13px;
-  font-weight: 400;
-  margin: 60px;
+  color: #c3c3ce;
+  margin-bottom: 5px;
 }
 .footer-list li address {
-  /* 기울어짐 때문에  */
+  /* address 하면 기울어지기 때문에 스타일 normal로 똑바로 세움 */
   font-style: normal;
 }
 /* top 버튼 */
@@ -621,6 +621,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  gap: 10px;
 }
 
 .top-button .chat-btn span {
@@ -655,22 +657,24 @@ body {
   text-align: center;
   box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
   letter-spacing: 0.5px;
+  
 }
-.top-button .top-btn {
-  background-color: red;
-  width: 55px;
-  border-radius: 50%;
-  line-height: 55px;
-  text-align: center;
+.top-button .top-btn{
+background-color: red;
+width: 55px;
+border-radius: 50%;
+line-height: 55px;
+text-align: center;
+
 }
-.top-button .top-btn img {
+.top-button .top-btn img{
   transform: rotate(180deg);
 }
-.top-button .top-btn img .up {
+.top-button .top-btn img.up{
   transform: rotate(0deg);
   /* 이미지의 위아래를 전환시키기 위해 적용 */
 }
-/* 애니메이션 효과 */
+/* 애내메이션 효과 */
 @keyframes updown {
   0% {
     transform: translatey(0);
